@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:wght@600;800&family=Unkempt&display=swap');
-/* https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css */
 body {
   font-family: 'poppins';
   background: rgba(101, 138, 206, 0.411);
   background-color: rgb(98, 98, 206);
   /* background-image: linear-gradient(256deg, #f5f7fa 10%, #c3cfe2 100%); */
   /* background-image: linear-gradient('256deg', #f5f7fa 10%, #3177e7 100%); */
-
+  filter: blur(19px);
 }
 .headline{
 
@@ -629,13 +628,113 @@ filter: blur(4px);
 
 
 .photo-gallery{
- 
+
   font-weight: bolder;
   font-family: 'Fugaz One';
-
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 4px 4px 2px rgb(0, 0, 0);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 40px;
   text-align: center;
   border: 2px solid black;
-
+  background: linear-gradient(to left, rgb(201, 166, 12), rgb(240, 240, 255));
+  -webkit-background-clip: text;
+  color: transparent;
  
 }
+
+.photo-conatiner{
+  width: auto;
+  height: fit-content;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.33);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(6.3px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.gallery{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 100px; */
+}
+.img-box{
+
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(drawing/paint2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: 1.2s;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+  filter: blur(19px);
+box-shadow: 4px 4px 8px purple;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+  
+}
+.img-box:nth-child(2){
+  box-shadow: 4px 4px 8px red;
+  background: url(drawing/paint1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(3){
+  box-shadow: 4px 4px 8px yellow;
+  background: url(drawing/paint3\(fav\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(4){
+  box-shadow: 4px 4px 8px green;
+  background: url(drawing/paint13.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(5){
+  
+  background: url(drawing/paint4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-box h3{
+  color: white;
+  text-shadow: 2px 2px black;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: 100px;
+  opacity: 0;
+}
+.img-box:hover{
+  border: 9px groove black;
+  width: 300px;
+  cursor: pointer;
+  border: 2px solid black;
+  filter: blur(0px);
+  filter: brightness(1);
+  
+}
+.img-box:hover h3{
+  opacity: 1;
+  font-size: larger;
+  cursor: pointer;
+
+}
+
