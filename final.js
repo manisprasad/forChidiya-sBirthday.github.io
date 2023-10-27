@@ -221,7 +221,7 @@ say.addEventListener("click", () => {
     document.getElementsByTagName("body")[0].innerHTML = "<h1>BYe</h1>";
     document.getElementsByTagName("body")[0].style.textAlign = "center";
     document.getElementsByTagName("body")[0].style.marginTop = "40%";
-  }, 20000);
+  }, 12000);
 });
 
   
