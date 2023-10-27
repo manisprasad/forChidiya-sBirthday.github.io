@@ -218,9 +218,12 @@ let req = document.getElementsByClassName("req")[0];
 
 say.addEventListener("click", () => {
   setTimeout(() => {
-    document.getElementsByTagName("body")[0].innerHTML = "<h1>BYe</h1>";
+    document.getElementsByTagName("body")[0].innerHTML = "<h1>okay then <br> BYe</h1>";
     document.getElementsByTagName("body")[0].style.textAlign = "center";
-    document.getElementsByTagName("body")[0].style.marginTop = "40%";
+    document.getElementsByTagName("body")[0].style.marginTop = "50%";
+    document.getElementsByTagName("body")[0].style.background = "black";
+    document.getElementsByTagName("body")[0].style.color = "white";
+   document.getElementsByTagName("body")[0].style.fontSize = "45px";
   }, 12000);
 });
 
