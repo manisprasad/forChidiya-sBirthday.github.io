@@ -34,7 +34,7 @@ function changeWord(spanElement) {
   // Set the inner text of the clicked span element to a random word
   let y = spanElement.innerText = randomWords[randomIndex];
   if(y == "so") sooCount++;
-  if(sooCount>= 21){
+  if(sooCount>= 24){
     document.getElementsByClassName("hexagon-part")[0].style.visibility = "hidden";
 
   
