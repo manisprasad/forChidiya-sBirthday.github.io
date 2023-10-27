@@ -1,4 +1,4 @@
-// Define an array of random words
+
 const randomWords = [
   "🍥",
   ":)",
@@ -218,7 +218,7 @@ let req = document.getElementsByClassName("req")[0];
 
 say.addEventListener("click", () => {
   setTimeout(() => {
-    document.getElementsByTagName("body")[0].innerHTML = "<h1>okay then <br> BYe</h1>";
+    document.getElementsByTagName("body")[0].innerHTML = "<h1>Okay then <br> 👋 </h1>";
     document.getElementsByTagName("body")[0].style.textAlign = "center";
     document.getElementsByTagName("body")[0].style.marginTop = "50%";
     document.getElementsByTagName("body")[0].style.background = "black";
