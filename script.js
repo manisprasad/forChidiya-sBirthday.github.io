@@ -12,24 +12,25 @@ setTimeout(() => {
     let sec = document.querySelector(".sec");
     let start1 = document.querySelector(".started");
     let aler_message = document.querySelector(".alert_message");
+    let pa = document.getElementsByClassName("para")[0];
 
     let currentDate = new Date();
-	console.log(currentDate.getDate())
-    if (currentDate.getDate() >= 28) {
-      card.innerHTML = "<p>Today is Someone's <span>Birthday</span></p>";
-    }
+
+
     start1.addEventListener("click", () => {
         if (currentDate.getDate() >= 28) {
-           
-            
+          start1.style.fontSize = "43px"
+          start1.style.borderRadius = "19px"
+          start1.style.background = "black"
             start1.innerHTML = '<a href="effect.html">Happy Birthday</a>';
             start1.classList.add("react");
             setTimeout(() => {
                 start1.style.background = "red";
-                start1.innerHTML = '<a href="effect.html">Click again</a>';
+                start1.innerHTML = '<a href="effect.html">Say Thanks ✨</a>';
+                
             }, 3000);
         } else {
-            aler_message.innerHTML = "There are still some time left in your birthday. Dude 🖐️";
+            aler_message.innerHTML = "There is still some time left in your birthday. Dude 🖐️";
             aler_message.style.background = "black";
             aler_message.style.padding = "11px";
             aler_message.style.marginTop = "19px";
@@ -51,8 +52,9 @@ setTimeout(() => {
 		
         if (currentDate.getDate() >= 28) {
 
-
-
+start1.style.cursor = "pointer"
+          pa.innerHTML = "<p>Click on start</p>"
+          card.innerHTML = "<p>Today is Someone's <span>Birthday</span></p>";
             day.innerHTML = "X";
             hour.innerHTML = "V";
             min.innerHTML = "I";
@@ -68,9 +70,17 @@ setTimeout(() => {
 
     let tar = document.getElementsByClassName("target")[0];
     let sent = document.getElementsByClassName("sky")[0];
+    let pop = document.getElementsByClassName("popup")[0];
     sent.addEventListener("click", ()=>{
       if(tar.value.length>5){
-        alert("Sucessfully send to Isro 😅 -> they will soon send to sky");
+        
+  pop.style.left ="50%";
+  pop.style.scale = "1";
+  setTimeout(() => {
+    pop.style.display = "none"
+   
+
+  }, 5000);
       }
       else if(tar.value.length == 0){
         alert("Idiot atlest write something");
@@ -79,36 +89,6 @@ setTimeout(() => {
         alert("Write more words");
       }
     })
-
-
-
-// setInterval(() => {
-//   if(text.value.length > 10){
-//     text.style.color = "black";
-//   }
-//   else{
-//     text.style.color = "#555";
-//   }
-// }, 400);
-
-
-
-
-// document.getElementsByClassName("test")[0].innerHTML = remaninHour;
-// document.getElementsByClassName("test")[1].innerHTML = remaninMin;
-// document.getElementsByClassName("test")[2].innerHTML = currentDay;
-// document.getElementsByClassName("test")[3].innerHTML = remaninMonth;
-
-
-
-
-
-
-
-
-
-
-
 
 
 

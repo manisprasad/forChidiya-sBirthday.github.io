@@ -218,6 +218,23 @@ body .block-container:hover > .btn-front {
     
   }
 }
+
+.popup{
+  
+  position: fixed;
+  transition: 0.4s;
+  scale: 0;
+  transform: translate(-50%, -50%);
+  background-color: #fff; /* Background color for the popup */
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  z-index: 123;
+  border: 2px solid black;
+  border-radius: 12px;
+  color: white;
+  background-color: #222324;
+  
+}
 .started{
   cursor:not-allowed;
   padding: 10px;
@@ -235,6 +252,8 @@ body .block-container:hover > .btn-front {
   box-shadow: 2px 2px 2px white;
   background: #000;
   color: white;
+  transition: all 0.35s ease;
+
 }
 .started:hover{
   background: white;
@@ -415,3 +434,5 @@ footer{
   display: flex;
   justify-content: center;
 }
+
+
