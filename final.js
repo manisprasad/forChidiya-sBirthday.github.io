@@ -125,7 +125,7 @@ let attemp = 1;
 let g = document.getElementsByClassName("container")[0];
 
 verify.addEventListener("click", () => {
-  if(pass.value == "chidiya"){
+  if(pass.value == "chidiya" || pass.value == "Chidiya"){
     lab.innerHTML = "I know you 😂, thats why i  set case sensitive for eg., cHiDya, chidiya or maybe CHIDIYA <hr> Another hint : there maybe a cheat code for case sensitive order";
     attemp++;
     return;
