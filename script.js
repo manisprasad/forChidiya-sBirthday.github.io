@@ -1,3 +1,4 @@
+
 const finalDateParts = "28/10/2023 23:59:59".split(/[\s:\/]+/);
 let head1 = document.getElementsByTagName("header")[0];
 setTimeout(() => {
@@ -9,23 +10,23 @@ setTimeout(() => {
     let hour = document.querySelector(".hour");
     let min = document.querySelector(".min");
     let sec = document.querySelector(".sec");
-    let start = document.querySelector(".started");
+    let start1 = document.querySelector(".started");
     let aler_message = document.querySelector(".alert_message");
 
     let currentDate = new Date();
 	console.log(currentDate.getDate())
-    if (currentDate.getDate() >= 24) {
+    if (currentDate.getDate() >= 28) {
       card.innerHTML = "<p>Today is Someone's <span>Birthday</span></p>";
     }
-    start.addEventListener("click", () => {
-        if (currentDate.getDate() >= 24) {
+    start1.addEventListener("click", () => {
+        if (currentDate.getDate() >= 28) {
            
             
-            start.innerHTML = '<a href="effect.html">Happy Birthday</a>';
-            start.classList.add("react");
+            start1.innerHTML = '<a href="effect.html">Happy Birthday</a>';
+            start1.classList.add("react");
             setTimeout(() => {
-                start.style.background = "red";
-                start.innerHTML = '<a href="effect.html">Click again</a>';
+                start1.style.background = "red";
+                start1.innerHTML = '<a href="effect.html">Click again</a>';
             }, 3000);
         } else {
             aler_message.innerHTML = "There are still some time left in your birthday. Dude 🖐️";
@@ -43,18 +44,21 @@ setTimeout(() => {
         let currentMin = currentDate.getMinutes();
         let currentSec = currentDate.getSeconds();
 
-        let remainingDay = finalDateParts[0] - currentDay;
+        let remainingDay = finalDateParts[0] - currentDay-1;
         let remainingHour = finalDateParts[3] - currentHour;
         let remainingMin = finalDateParts[4] - currentMin;
         let remainingSec = finalDateParts[5] - currentSec;
 		
-        if (currentDate.getDate() >= 24) {
+        if (currentDate.getDate() >= 28) {
+
+
+
             day.innerHTML = "X";
             hour.innerHTML = "V";
             min.innerHTML = "I";
             sec.innerHTML = "I";
             clearInterval(a);
-        } else {
+        } else {        
             day.innerHTML = `${remainingDay} days`;
             hour.innerHTML = `${remainingHour} hours`;
             min.innerHTML = `${remainingMin} minutes`;
@@ -94,6 +98,17 @@ setTimeout(() => {
 // document.getElementsByClassName("test")[1].innerHTML = remaninMin;
 // document.getElementsByClassName("test")[2].innerHTML = currentDay;
 // document.getElementsByClassName("test")[3].innerHTML = remaninMonth;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
